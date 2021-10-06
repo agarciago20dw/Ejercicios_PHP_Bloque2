@@ -38,7 +38,7 @@
                 throw new Exception("El lado es negativo");
             }
             else {
-                return $lado * 4;
+                return $lado * $lado;
             }
         }
 
