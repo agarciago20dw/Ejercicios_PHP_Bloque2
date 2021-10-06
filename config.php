@@ -1,5 +1,5 @@
 <?php
 
-echo "ESTÁS EN CONFIG.PHP";
+echo "¡HAS SIDO REDIRIGIDO A CONFIG.PHP!";
 
 ?>
