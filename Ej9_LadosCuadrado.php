@@ -18,7 +18,7 @@
 
         // FUNCIÓN QUE MUESTRA EN FORMA DE TABLA EL ÁREA DE LOS CUADRADOS RECORRIENDO EL ARRAY DE LADOS
         public function mostrarAreaCuadrados() {
-            $cod_html = "<br><br><center><table border='1' style='font-size: 2rem;'>";
+            $cod_html = "<br><br><center><table border='1' style='font-size: 2rem; text-align: center;'>";
 
             $cod_html .= "<tr><td>LADO</td><td>ÁREA</td></tr>";
             for ($i = 0; $i < count($this->lados); $i++) {
@@ -29,7 +29,7 @@
                 }
                 // EN CASO DE QUE SE PRODUZCA MOSTRAMOS EL MENSAJE DE LA MISMA
                 catch (Exception $e) {
-                    echo "<br>" . $e->getMessage();
+                    $resultado = $e->getMessage();
                 }
                 $cod_html .= "<tr><td>" . $this->lados[$i] . "</td><td>" . $resultado . "</td></tr>";
             }
